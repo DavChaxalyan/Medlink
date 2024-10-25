@@ -1,6 +1,7 @@
 <script setup>
 import MedlinkCommunity from './components/Medlink Community/MedlinkCommunity.vue';
 import Header from "./components/Header/Header.vue";
+import LatestPosts from './components/LatestPosts/LatestPosts.vue'
 import FAQs from "./components/FAQs/FAQs.vue";
 import VideoShowcase from './components/Video Showcase/VideoShowcase.vue';
 import CaseStudies from './components/CaseStudies/CaseStudies.vue';
@@ -25,6 +26,7 @@ const slides = [
 <template>
     <Header />
     <MedlinkCommunity />
+    <LatestPosts />
     <Slider01 :slides="slides">
         <template v-slot:slide="{ slide }">
             <SliderItem01 :imageSrc="slide.image" :title="slide.title" :description="slide.description" />
