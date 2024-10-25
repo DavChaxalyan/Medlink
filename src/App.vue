@@ -1,6 +1,7 @@
 <script setup>
 import MedlinkCommunity from './components/Medlink Community/MedlinkCommunity.vue';
 import Header from "./components/Header/Header.vue";
+import CaseStudies from './components/CaseStudies/CaseStudies.vue';
 import starImg from "./assets/images/access-resources.png"
 import connectPeers from "./assets/images/connect-with-peers.png"
 import attendEvents from "./assets/images/attend-events.png"
@@ -26,6 +27,7 @@ const slides = [
             <SliderItem01 :imageSrc="slide.image" :title="slide.title" :description="slide.description" />
         </template>
     </Slider01>
+    <CaseStudies />
 </template>
 
 <style scoped></style>
