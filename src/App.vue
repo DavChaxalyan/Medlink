@@ -27,7 +27,6 @@ const slides = [
 <template>
     <Header />
     <MedlinkCommunity />
-    <LatestPosts />
     <Slider01 :slides="slides">
         <template v-slot:slide="{ slide }">
             <SliderItem01 :imageSrc="slide.image" :title="slide.title" :description="slide.description" />
@@ -36,6 +35,7 @@ const slides = [
     <CaseStudies />
     <VideoShowcase />
     <FAQs />
+    <LatestPosts />
     <Footer />
 </template>
 

@@ -1,5 +1,5 @@
 <template>
-    <div class="max-w-[1408px] h-[566px] rounded-[40px] bg-[#DFF3F6] relative flex items-center justify-center mt-[16px]">
+    <div class="h-[566px] rounded-[40px] bg-[#DFF3F6] relative flex items-center justify-center mt-[16px]">
         <div class="absolute bottom-0 left-1/2 transform -translate-x-1/2">
             <img src="../../assets/images/clip-path-community.png" alt="">
         </div>

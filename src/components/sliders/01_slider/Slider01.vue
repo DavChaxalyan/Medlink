@@ -15,8 +15,8 @@
           Guidance, Inspiration, and Understanding</p>
       </div>
     </div>
-    <div class="flex items-center justify-center" @wheel.prevent="handleScroll">
-      <div class="max-w-[1300px] overflow-hidden">
+    <div class="flex items-center justify-center">
+      <div class="max-w-[1300px] overflow-hidden" @wheel.prevent="handleScroll">
         <div class="flex transition-transform duration-300 gap-[40px] mt-[60px]"
           :style="{ transform: `translateX(-${currentIndex * (100 / 3)}%)` }">
           <div v-for="(slide, index) in slides" :key="index" class="flex-shrink-0">
