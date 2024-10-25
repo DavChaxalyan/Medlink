@@ -1,6 +1,7 @@
 <script setup>
 import MedlinkCommunity from './components/Medlink Community/MedlinkCommunity.vue';
 import Header from "./components/Header/Header.vue";
+import VideoShowcase from './components/Video Showcase/VideoShowcase.vue';
 import CaseStudies from './components/CaseStudies/CaseStudies.vue';
 import starImg from "./assets/images/access-resources.png"
 import connectPeers from "./assets/images/connect-with-peers.png"
@@ -17,6 +18,7 @@ const slides = [
     { image: starImg, title: 'Attend Events', description: 'Participate in our engaging webinars and events to stay informed about the latest developments in healthcare.' },
     { image: attendEvents, title: 'Attend Events', description: 'Participate in our engaging webinars and events to stay informed about the latest developments in healthcare.' },
 ];
+
 </script>
 
 <template>
@@ -28,6 +30,7 @@ const slides = [
         </template>
     </Slider01>
     <CaseStudies />
+    <VideoShowcase />
 </template>
 
 <style scoped></style>
