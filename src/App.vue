@@ -9,6 +9,7 @@ import connectPeers from "./assets/images/connect-with-peers.png"
 import attendEvents from "./assets/images/attend-events.png"
 import SliderItem01 from './components/sliders/01_slider/SliderItem01.vue';
 import Slider01 from './components/sliders/01_slider/Slider01.vue';
+import Footer from './components/Footer/Footer.vue';
 
 const slides = [
     { image: connectPeers, title: 'Attend Events', description: 'Participate in our engaging webinars and events to stay informed about the latest developments in healthcare.' },
@@ -33,6 +34,7 @@ const slides = [
     <CaseStudies />
     <VideoShowcase />
     <FAQs />
+    <Footer />
 </template>
 
 <style scoped></style>
