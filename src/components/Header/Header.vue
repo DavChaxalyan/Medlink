@@ -1,7 +1,7 @@
 <template >
   <div>
     <header class="py-0">
-      <nav class="max-w-[1140px] w-full flex justify-between">
+      <nav class="w-full flex justify-between">
         <div class="container-logo h-20 w-full max-w-[500px]">
           <div class="pt-[30px]">
             <img
