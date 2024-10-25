@@ -59,16 +59,16 @@
       <div class="mt-[40px] flex justify-center">
         <div class="flex gap-[20px] pl-[100px]">
           <div class="max-w-[560px] flex flex-col gap-[40px]">
-            <div class="relative">
+            <div class="relative overflow-hidden">
               <img
                 class="max-w-[560px]"
                 src="../../assets/images/nurse.png"
                 alt="Nurse"
               />
               <div
-                class="rotate-[-90deg] absolute left-[370px] right-[-308px] top-[208px] max-w-[363px] h-[24px]"
+                class="rotate-[-90deg] absolute left-[370px] right-[-308px] top-[226px] max-w-[363px] h-[24px]"
               >
-                <img src="../../assets/images/clip-path-community.png" alt="" />
+                <img src="../../assets/images/clip-path-community.png" class="filter-custom-filter" alt="" />
               </div>
             </div>
             <div>
