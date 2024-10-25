@@ -1,5 +1,5 @@
 <template>
-    <div class="mt-[150px] max-w-[1140px] ml-[150px]">
+    <div class="mt-[150px]">
         <div class="flex flex-col items-center gap-[40px]">
             <div class="flex items-center gap-[16px]">
                 <div class="w-[63px] h-[45px] p-[8px_16px] gap-[10px] rounded-[27px] border border-gray-300 flex items-center justify-center bg-[#1F293314] text-[#1F2933] font-medium text-[24px] leading-[28.8px] tracking[-0.02em] text-left">04</div>
@@ -14,7 +14,7 @@
                 </div>
             </div>
         </div>
-        <div class="flex flex-col gap-[8px] mt-[40px]">
+        <div class="flex flex-col items-center gap-[8px] mt-[40px]">
             <div v-for="(item, index) in data" :key="index">
                 <FAQsItem :question="item.question" :answer="item.answer" />
             </div>

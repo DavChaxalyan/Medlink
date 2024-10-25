@@ -1,8 +1,8 @@
 <template >
   <div class="mt-150px">
-    <section class="bg-[#E4ECF7] pl-[134px] pr-[134px] mt-[150px]">
-      <div class="pt-[80px] flex gap-[134px]">
-        <div class="flex items-center flex-wrap gap-[16px] max-w-[1140px]">
+    <section class="bg-[#E4ECF7] mt-[150px] rounded-[40px]">
+      <div class="pt-[80px] flex gap-[134px] justify-center">
+        <div class="flex items-center flex-wrap gap-[16px]">
           <div class="py-2 px-4 bg-[#BAD8F14D] rounded-[27px]">
             <p class="font-medium text-[24px] leading-[28.8px] text-[#1F2933]">
               02
@@ -19,9 +19,9 @@
           MedLink Community in action.
         </p>
       </div>
-      <div class="relative">
+      <div class="flex justify-center pl-[85px] relative">
         <div
-          class="max-w-[1140px] flex gap-[4px] bg-[#FFFFFF33] rounded-[110px] items-center mt-[40px]"
+          class="max-w-[1128px] flex gap-[4px] bg-[#FFFFFF33] rounded-[110px] items-center mt-[40px] overflow-hidden p-[4px]"
         >
           <div
             class="pt-6 pr-8 pb-6 pl-8 bg-[#DAFF98] rounded-[40px] max-w-[83px] max-h-[70px]"
@@ -51,13 +51,13 @@
           </div>
         </div>
         <div
-          class="w-[54px] h-[54px] bg-[#FFFFFF] rounded-[40px] absolute top-[27px] right-[28%] bottom-[15px] flex justify-center items-center"
+          class="w-[54px] h-[54px] bg-[#FFFFFF] rounded-[40px] absolute right-[310px] bottom-[-20px] flex justify-center items-center z-[10000]"
         >
           <img src="../../assets/images/rigth-icon.png" alt="" />
         </div>
       </div>
-      <div class="mt-[40px]">
-        <div class="flex gap-[20px]">
+      <div class="mt-[40px] flex justify-center">
+        <div class="flex gap-[20px] pl-[100px]">
           <div class="max-w-[560px] flex flex-col gap-[40px]">
             <div class="relative">
               <img
@@ -187,7 +187,7 @@
           </div>
         </div>
       </div>
-      <div class="flex justify-center items-center mt-[40px] max-w-[1140px]">
+      <div class="flex justify-center items-center mt-[40px] pb-[104px]">
         <button class="pt-[32px] pb-[32px] pl-[64px] pr-[64px] bg-[#1F2933] rounded-[40px] text-[#FFFFFF]">View All Conditions</button>
       </div>
     </section>
