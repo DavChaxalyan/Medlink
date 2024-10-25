@@ -1,6 +1,7 @@
 <script setup>
 import MedlinkCommunity from './components/Medlink Community/MedlinkCommunity.vue';
 import Header from "./components/Header/Header.vue";
+import FAQs from "./components/FAQs/FAQs.vue";
 import VideoShowcase from './components/Video Showcase/VideoShowcase.vue';
 import CaseStudies from './components/CaseStudies/CaseStudies.vue';
 import starImg from "./assets/images/access-resources.png"
@@ -31,6 +32,7 @@ const slides = [
     </Slider01>
     <CaseStudies />
     <VideoShowcase />
+    <FAQs />
 </template>
 
 <style scoped></style>
