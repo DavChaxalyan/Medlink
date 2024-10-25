@@ -1,7 +1,7 @@
 <template>
   <div>
     <header class="py-0">
-      <nav class="w-full flex justify-between">
+      <nav class="max-w-[1640px] w-full flex justify-between">
         <div class="container-logo h-20 w-full max-w-[500px]">
           <div class="pt-[30px]">
             <img
@@ -11,7 +11,7 @@
             />
           </div>
         </div>
-        <ul class="w-[514px] flex items-center">
+        <ul class="flex items-center">
           <div class="relative">
             <div
               v-if="!isSearchOpen"
@@ -26,11 +26,11 @@
             </div>
             <div
               v-if="isSearchOpen"
-              class="flex items-center max-w-full w-[476px] h-[56px]"
+              class="flex items-center max-w-full w-[476px] h-[56px] border border-gray-300 rounded-full input-background pr-[8px]"
             >
               <div
                 @click="toggleSearch"
-                class="cursor-pointer p-2 pl-2 rounded-full absolute"
+                class="cursor-pointer p-2 pl-2 rounded-full"
               >
                 <img
                   src="../../assets/images/search.png"
@@ -42,11 +42,11 @@
                 v-model="searchQuery"
                 type="text"
                 placeholder="Search"
-                class="w-full p-3 border border-gray-300 rounded-full focus:outline-none input-background pl-[38.5px]"
+                class="w-full p-[8px_8px_8px_0px] focus:outline-none"
                 @click="openSearchPanel"
               />
               <div
-                class="absolute right-[16px] cursor-pointer"
+                class="right-[16px] cursor-pointer"
                 @click="toggleSearch"
               >
                 <img src="../../assets/images/close.png" alt="Close Icon" />
