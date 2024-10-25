@@ -1,6 +1,6 @@
 <template>
   <div 
-    class="w-[1140px] h-[88px] p-[24px] gap-[24px] rounded-[32px] flex justify-between border border-[gray]" 
+    class="w-[1140px] p-[24px] gap-[24px] rounded-[32px] flex justify-between border border-[gray]" 
     :class="{ 'bg-[#E4ECF7]': isOpen, 'h-[145px]': isOpen, 'items-start': isOpen, 'items-center': !isOpen }" 
   >
     <div class="flex flex-col gap-[24px]">

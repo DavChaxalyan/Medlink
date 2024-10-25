@@ -17,11 +17,11 @@
       </div>
   
       <div class="flex justify-between items-center mt-4">
-        <button @click="prevSlide" class="w-[160px] h-[64px] p-[20px_32px] rounded-[80px] border border-black flex items-center justify-center gap-[10px]">
+        <button @click="prevSlide" class="w-[160px] h-[64px] p-[20px_32px] rounded-[80px] border border-[#FFFFFF29] flex items-center justify-center gap-[10px]">
             <img src="../../assets/images/arrow-left.png" alt="Prev">
             <p class="text-[#FFFFFF] font-semibold text-[16px] leading-[16px] text-left">Prev</p>
         </button>
-        <button @click="nextSlide" class="w-[160px] h-[64px] p-[20px_32px] rounded-[80px] border border-black flex items-center justify-center gap-[10px]">
+        <button @click="nextSlide" class="w-[160px] h-[64px] p-[20px_32px] rounded-[80px] border border-[#FFFFFF29] flex items-center justify-center gap-[10px]">
             <img src="../../assets/images/arrow-right.png" alt="Next">
             <p class="text-[#FFFFFF] font-semibold text-[16px] leading-[16px] text-left">Next</p>
         </button>

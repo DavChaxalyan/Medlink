@@ -11,7 +11,7 @@
             />
           </div>
         </div>
-        <ul class="w-[514px] flex items-center">
+        <ul class="flex items-center">
           <div class="relative">
             <div
               v-if="!isSearchOpen"
@@ -26,11 +26,11 @@
             </div>
             <div
               v-if="isSearchOpen"
-              class="flex items-center max-w-full w-[476px] h-[56px]"
+              class="flex items-center input-background border border-gray-300 rounded-full max-w-full w-[476px] h-[56px]"
             >
               <div
                 @click="toggleSearch"
-                class="cursor-pointer p-2 pl-2 rounded-full absolute"
+                class="cursor-pointer p-2 pl-2 rounded-full"
               >
                 <img
                   src="../../assets/images/search.png"
@@ -42,11 +42,11 @@
                 v-model="searchQuery"
                 type="text"
                 placeholder="Search"
-                class="w-full p-3 border border-gray-300 rounded-full focus:outline-none input-background pl-[38.5px]"
+                class="p-[8px_8px_8px_0] focus:outline-none border-none max-w-[415px] w-[100%]"
                 @click="openSearchPanel"
               />
               <div
-                class="absolute right-[16px] cursor-pointer"
+                class="right-[16px] cursor-pointer"
                 @click="toggleSearch"
               >
                 <img src="../../assets/images/close.png" alt="Close Icon" />
@@ -95,7 +95,7 @@
             <li>
               <button
                 type="button"
-                class="w-[109px] h-[56px] p-[20px32px] rounded-[40px] bg-[#1F2933] text-white"
+                class="w-[109px] h-[56px] p-[20px24px] rounded-[40px] bg-[#1F2933] text-white"
               >
                 Log in
               </button>
