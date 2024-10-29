@@ -11,7 +11,6 @@ import attendEvents from "../../assets/images/attend-events.png";
 import SliderItem01 from "../../components/sliders/01_slider/SliderItem01.vue";
 import Slider01 from "../../components/sliders/01_slider/Slider01.vue";
 import Footer from "../../components/Footer/Footer.vue";
-import BreastCase from "../../components/BreastCancer/BreastCase.vue";
 
 const slides = [
   {
@@ -77,7 +76,6 @@ const slides = [
   <VideoShowcase />
   <FAQs />
   <LatestPosts />
-  <BreastCase />
   <Footer />
 </template>
 
