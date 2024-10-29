@@ -72,10 +72,12 @@
             <div v-if="!isSearchOpen" class="flex gap-[24px] items-center">
               <li>
                 <a
-                  class="font-sans text-[16px] font-medium leading-[16px] text-left text-[#1F2933A3]"
-                  href=""
+                  class="font-sans text-[16px] font-medium leading-[16px] text-left text-[#1F2933A3] cursor-pointer"
+                  
+                  @click="isOpenToggle"
                   >For Patients</a
                 >
+                <PatientsMenu :isOpen="isOpen" />
               </li>
               <li>
                 <a
@@ -104,12 +106,14 @@
         </ul>
       </nav>
     </header>
+    
   </div>
 </template>
 
 <script setup>
+const isOpen = ref(false)
 import { ref } from "vue";
-
+import PatientsMenu from "../PatientsMenu/PatientsMenu.vue";
 const isSearchOpen = ref(false);
 const isSearchPanel = ref(false);
 const searchQuery = ref("");
@@ -135,6 +139,11 @@ const selectItem = (item) => {
   searchQuery.value = item;
   isSearchPanel.value = false;
 };
+
+
+const isOpenToggle = () =>{
+  isOpen.value = !isOpen.value
+}
 </script>
 
 <style scoped>

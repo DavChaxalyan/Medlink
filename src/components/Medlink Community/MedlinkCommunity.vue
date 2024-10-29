@@ -1,6 +1,6 @@
 <template>
     <div
-        class="relative overflow-hidden h-[788px] gap-0 rounded-[0px_40px_40px_40px] bg-[radial-gradient(circle_at_58.91%_45.43%,_#BAD8F1_0%,_#B4C0D0_100%)] flex justify-between">
+        class="relative overflow-hidden h-[788px]  gap-0 rounded-[0px_40px_40px_40px] bg-[radial-gradient(circle_at_58.91%_45.43%,_#BAD8F1_0%,_#B4C0D0_100%)] flex justify-between">
         <div class="pt-[99px] pb-0 pl-[134px]">
             <div class='w-[560px] h-[482px]'>
                 <p class="font-dm-sans text-[96px] font-normal leading-[96px] tracking-[-0.06em] text-left">MedLink
@@ -21,8 +21,7 @@
                     Us</button>
             </div>
         </div>
-        <div class="w-[780px] h-[780px] bg-[url(src/assets/images/community-img.png)]">
-
+        <div class="max-w-[780px] w-full bg-center bg-no-repeat h-[780px] bg-[url(src/assets/images/community-img.png)]">
         </div>
         <div class="absolute bottom-0 left-1/2 transform -translate-x-1/2">
             <img src="../../assets/images/clip-path-community.png" alt="">

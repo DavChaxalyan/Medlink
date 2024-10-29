@@ -22,15 +22,14 @@
           accumsan suscipit nisl et aliquam.
         </p>
       </div>
-{{ console.log(latestObj.values)
- }}
+      {{ console.log(latestObj.values) }}
       <LatestPostsItem :currentSlide="currentSlide" :latestObj="latestObj" />
     </div>
     <div>
       <div class="p-[0px_134px] flex justify-between">
         <div
           @click="prevSlide"
-          class="flex items-center p-[20px_32px] gap-[10px]"
+          class="flex items-center p-[20px_32px] gap-[10px] cursor-pointer"
         >
           <img src="../../assets/images/left-icon.png" alt="" />
           <p class="text-[#FFFFFF] text-[16px] font-semibold leadeing-[16px]">
@@ -39,7 +38,7 @@
         </div>
         <div
           @click="nextSlide"
-          class="flex items-center p-[20px_32px] gap-[10px]"
+          class="flex items-center p-[20px_32px] gap-[10px] cursor-pointer"
         >
           <p class="text-[#FFFFFF] text-[16px] font-semibold leadeing-[16px]">
             Next
@@ -57,86 +56,81 @@
 import LatestPostsItem from "./LatestPostsItem.vue";
 import { ref, reactive } from "vue";
 
-    const latestObj = reactive([
-      {
-        image: "../../../src/assets/images/women-2.png",
-        text: "Lorem ipsum dolor sit",
-        description:
-          "Lorem ipsum dolor sit amet consectetur. Sagittis vitae eleifend vitae amet nisi cum.",
-        watch: "watch now",
-        imageRectangle: "../../../src/assets/images/rectangle-latest.png",
-        play: "",
-      },
-      {
-        image: "../../../src/assets/images/women.png",
-        text: "Lorem ipsum dolor sit",
-        description:
-          "Lorem ipsum dolor sit amet consectetur. Sagittis vitae eleifend vitae amet nisi cum.",
-        watch: "watch now",
-        imageRectangle: "../../../src/assets/images/rectangle-latest.png",
-        play: "",
-      },
-      {
-        image: "../../../src/assets/images/big-font-size.png",
-        text: "What symptoms did you have? What was the western medical diagnosis and/or the eastern medicine diagnosis?",
-        description:
-          "Lorem ipsum dolor sit amet consectetur. Sagittis vitae eleifend vitae amet nisi cum.",
-        watch: "watch now",
-        imageRectangle: "../../../src/assets/images/rectangle-latest.png",
-        play: "../../../src/assets/images/font-size-01.png",
-      },
-      {
-        image: "../../../src/assets/images/big-font-size.png",
-        text: "What symptoms did you have? What was the western medical diagnosis and/or the eastern medicine diagnosis?",
-        description:
-          "Lorem ipsum dolor sit amet consectetur. Sagittis vitae eleifend vitae amet nisi cum.",
-        watch: "watch now",
-        imageRectangle: "../../../src/assets/images/rectangle-latest.png",
-        play: "../../../src/assets/images/font-size-01.png",
-      },
-      {
-        image: "../../../src/assets/images/big-font-size.png",
-        text: "What symptoms did you have? What was the western medical diagnosis and/or the eastern medicine diagnosis?",
-        description:
-          "Lorem ipsum dolor sit amet consectetur. Sagittis vitae eleifend vitae amet nisi cum.",
-        watch: "watch now",
-        imageRectangle: "../../../src/assets/images/rectangle-latest.png",
-        play: "../../../src/assets/images/font-size-01.png",
-      },
-      {
-        image: "../../../src/assets/images/big-font-size.png",
-        text: "What symptoms did you have? What was the western medical diagnosis and/or the eastern medicine diagnosis?",
-        description:
-          "Lorem ipsum dolor sit amet consectetur. Sagittis vitae eleifend vitae amet nisi cum.",
-        watch: "watch now",
-        imageRectangle: "../../../src/assets/images/rectangle-latest.png",
-        play: "../../../src/assets/images/font-size-01.png",
-      },
-      {
-        image: "../../../src/assets/images/big-font-size.png",
-        text: "What symptoms did you have? What was the western medical diagnosis and/or the eastern medicine diagnosis?",
-        description:
-          "Lorem ipsum dolor sit amet consectetur. Sagittis vitae eleifend vitae amet nisi cum.",
-        watch: "watch now",
-        imageRectangle: "../../../src/assets/images/rectangle-latest.png",
-        play: "../../../src/assets/images/font-size-01.png",
-      },
-    ]);
+const latestObj = reactive([
+  {
+    image: "../../../src/assets/images/women-2.png",
+    text: "Lorem ipsum dolor sit",
+    description:
+      "Lorem ipsum dolor sit amet consectetur. Sagittis vitae eleifend vitae amet nisi cum.",
+    watch: "watch now",
+    imageRectangle: "../../../src/assets/images/rectangle-latest.png",
+    play: "",
+  },
+  {
+    image: "../../../src/assets/images/women.png",
+    text: "Lorem ipsum dolor sit",
+    description:
+      "Lorem ipsum dolor sit amet consectetur. Sagittis vitae eleifend vitae amet nisi cum.",
+    watch: "watch now",
+    imageRectangle: "../../../src/assets/images/rectangle-latest.png",
+    play: "",
+  },
+  {
+    image: "../../../src/assets/images/big-font-size.png",
+    text: "What symptoms did you have? What was the western medical diagnosis and/or the eastern medicine diagnosis?",
+    description:
+      "Lorem ipsum dolor sit amet consectetur. Sagittis vitae eleifend vitae amet nisi cum.",
+    watch: "watch now",
+    imageRectangle: "../../../src/assets/images/rectangle-latest.png",
+    play: "../../../src/assets/images/font-size-01.png",
+  },
+  {
+    image: "../../../src/assets/images/big-font-size.png",
+    text: "What symptoms did you have? What was the western medical diagnosis and/or the eastern medicine diagnosis?",
+    description:
+      "Lorem ipsum dolor sit amet consectetur. Sagittis vitae eleifend vitae amet nisi cum.",
+    watch: "watch now",
+    imageRectangle: "../../../src/assets/images/rectangle-latest.png",
+    play: "../../../src/assets/images/font-size-01.png",
+  },
+  {
+    image: "../../../src/assets/images/big-font-size.png",
+    text: "What symptoms did you have? What was the western medical diagnosis and/or the eastern medicine diagnosis?",
+    description:
+      "Lorem ipsum dolor sit amet consectetur. Sagittis vitae eleifend vitae amet nisi cum.",
+    watch: "watch now",
+    imageRectangle: "../../../src/assets/images/rectangle-latest.png",
+    play: "../../../src/assets/images/font-size-01.png",
+  },
+  {
+    image: "../../../src/assets/images/big-font-size.png",
+    text: "What symptoms did you have? What was the western medical diagnosis and/or the eastern medicine diagnosis?",
+    description:
+      "Lorem ipsum dolor sit amet consectetur. Sagittis vitae eleifend vitae amet nisi cum.",
+    watch: "watch now",
+    imageRectangle: "../../../src/assets/images/rectangle-latest.png",
+    play: "../../../src/assets/images/font-size-01.png",
+  },
+  {
+    image: "../../../src/assets/images/big-font-size.png",
+    text: "What symptoms did you have? What was the western medical diagnosis and/or the eastern medicine diagnosis?",
+    description:
+      "Lorem ipsum dolor sit amet consectetur. Sagittis vitae eleifend vitae amet nisi cum.",
+    watch: "watch now",
+    imageRectangle: "../../../src/assets/images/rectangle-latest.png",
+    play: "../../../src/assets/images/font-size-01.png",
+  },
+]);
 
-    const currentSlide = ref(0);
-    const nextSlide = () => {
-      currentSlide.value = (currentSlide.value + 1) % latestObj.length;
-    };
+const currentSlide = ref(0);
+const nextSlide = () => {
+  currentSlide.value = (currentSlide.value + 1) % latestObj.length;
+};
 
-    const prevSlide = () => {
-      currentSlide.value =
-        currentSlide.value === 0
-          ? latestObj.length - 1
-          : currentSlide.value - 1;
-    };
- 
-
-
+const prevSlide = () => {
+  currentSlide.value =
+    currentSlide.value === 0 ? latestObj.length - 1 : currentSlide.value - 1;
+};
 </script>
 <style scoped >
 </style>
