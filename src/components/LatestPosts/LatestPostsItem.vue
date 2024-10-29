@@ -1,7 +1,6 @@
 <template>
   <div class="latest-container overflow-hidden max-w-[1750px] w-full">
     <div class="flex mt-[60px]  transition-transform duration-500 w-[600px]" :style="{transform:`translateX(-${currentSlide * (100 / 3)}%)`}">
-      {{ console.log(props) }}
       <div
         v-for="(item, index) in props.latestObj"
         :key="index"
@@ -70,7 +69,6 @@ import {  defineProps } from "vue";
       }
       return {};
     };
-console.log(props)
 </script>
   
   <style>
