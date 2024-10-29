@@ -1,15 +1,17 @@
 <template>
     <div>
         <Header />
-        <ParticipantSummary/>
+        <HeaderCancerPage />
         <BreastCancerTables />
         <TextContainer />
+        <ParticipantSummary/>
         <Footer />
     </div>
 </template>
 
 <script setup>
 import ParticipantSummary from "../../components/ParticipantSummary/ParticipantSummary.vue";
+import HeaderCancerPage from "../../components/Header Cancer Page/HeaderCancerPage.vue"
 import Header from "../../components/Header/Header.vue";
 import BreastCancerTables from "../../components/CaseStudiesPageTables/BreastCancerTables.vue";
 import TextContainer from "../../components/Text Container/TextContainer.vue";
