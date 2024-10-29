@@ -1,4 +1,4 @@
-<template >
+<template>
   <div class="absolute z-10 right-[160px] top-[80px]" :class="{ hidden: !isOpen }">
 
     <div class="max-w-[1140px] p-[40px] rounded-[24px] bg-[#FFFFFF]">
@@ -10,9 +10,11 @@
       </div>
       <div class="flex gap-[118.33px] mt-[20px]">
         <div class="max-w-[176px] flex flex-col gap-[20px]">
-          <p class="font-normal leading-[24px] text-customGray text-[16px]">
-            Breast Cancer
-          </p>
+          <router-link to="/breast-cancer">
+            <p class="font-normal leading-[24px] text-customGray text-[16px]">
+              Breast Cancer
+            </p>
+          </router-link>
           <p class="font-normal leading-[24px] text-customGray text-[16px]">
             IBD
           </p>
@@ -121,5 +123,4 @@ const props = defineProps({
 });
 
 </script>
-<style >
-</style>
+<style></style>
