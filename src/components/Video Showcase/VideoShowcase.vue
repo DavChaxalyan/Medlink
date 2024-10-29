@@ -13,6 +13,7 @@
             </div>
         </div>
         <VideoShowcaseSlider />
+        
     </div>
 </template>
 
