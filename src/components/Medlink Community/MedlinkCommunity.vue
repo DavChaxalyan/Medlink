@@ -1,6 +1,6 @@
 <template>
     <div
-        class="relative overflow-hidden h-[788px]  gap-0 rounded-[0px_40px_40px_40px] bg-[radial-gradient(circle_at_58.91%_45.43%,_#BAD8F1_0%,_#B4C0D0_100%)] flex justify-between">
+        class="relative overflow-hidden h-[788px]  gap-0 rounded-[0px_40px_40px_40px] bg-[radial-gradient(circle_at_58.91%_45.43%,_#BAD8F1_0%,_#B4C0D0_100%)] flex justify-between ">
         <div class="pt-[99px] pb-0 pl-[134px]">
             <div class='w-[560px] h-[482px]'>
                 <p class="font-dm-sans text-[96px] font-normal leading-[96px] tracking-[-0.06em] text-left">MedLink
@@ -80,4 +80,7 @@ const progressStroke = computed(() => {
     return `${(progress.value / 100) * totalLength} ${totalLength}`;
 });
 </script>
-<style></style>
+<style scoped>
+
+
+</style>

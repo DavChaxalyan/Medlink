@@ -21,7 +21,7 @@
                         <p class="font-dm-sans text-[16px] font-medium leading-[22.4px] text-left text-[#1F2933]">Sitemap</p>
                     </div>
                 </div>
-                <div class="flex flex-col gap-[40px]">
+                <div class="flex flex-col gap-[40px] max-w-300px">
                     <p class="font-dm-sans text-[20px] font-medium leading-[24px] text-left text-[#1F2933]">Others Link</p>
                     <div class="flex flex-col gap-[16px]">
                         <p class="font-dm-sans text-[16px] font-medium leading-[22.4px] text-left text-[#1F2933]">Terms of use</p>

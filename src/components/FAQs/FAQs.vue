@@ -15,7 +15,7 @@
             </div>
         </div>
         <div class="flex flex-col items-center gap-[8px] mt-[40px]">
-            <div v-for="(item, index) in data" :key="index">
+            <div v-for="(item, index) in data" :key="index" class="w-full flex justify-center">
                 <FAQsItem :question="item.question" :answer="item.answer" />
             </div>
         </div>
