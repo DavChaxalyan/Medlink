@@ -5,6 +5,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      backdropBlur: {
+        '24': '24px',
+      },
       filter: {
         'custom-filter': 'brightness(0) saturate(100%) invert(96%) sepia(6%) saturate(1202%) hue-rotate(179deg) brightness(97%) contrast(101%)',
       },
