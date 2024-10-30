@@ -59,6 +59,7 @@
             </li>
           </div>
         </ul>
+        <BurgerMenu />
       </nav>
     </header>
 
@@ -67,6 +68,7 @@
 
 <script setup>
 const isOpen = ref(false)
+import BurgerMenu from "../BurgerMenu/BurgerMenu.vue";
 import { ref } from "vue";
 import PatientsMenu from "../PatientsMenu/PatientsMenu.vue";
 const isSearchOpen = ref(false);
