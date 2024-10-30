@@ -7,6 +7,8 @@ module.exports = {
     extend: {
       filter: {
         'custom-filter': 'brightness(0) saturate(100%) invert(96%) sepia(6%) saturate(1202%) hue-rotate(179deg) brightness(97%) contrast(101%)',
+        'black-filter': ' brightness(0) saturate(100%) invert(13%) sepia(44%) saturate(305%) hue-rotate(168deg) brightness(101%) contrast(98%)',
+
       },
       colors: {
         customGray: '#1F2933',
@@ -18,5 +20,6 @@ module.exports = {
   },
   plugins: [
     require('tailwindcss-filters'),
+  
   ],
 }

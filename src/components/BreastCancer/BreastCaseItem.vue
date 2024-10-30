@@ -42,7 +42,7 @@
                   <div
                     class="w-[20px] h-[20px] rounded-[40px] bg-[#398B39] flex justify-center items-center"
                   >
-                    <img class="w-[8px]" :src="playImageRecorder" alt="" />
+                    <img class="w-[8px]" :src="playImageRecorder" alt="playImageRecorder" />
                   </div>
                   <div class="flex gap-[5px] items-center">
                     <div
