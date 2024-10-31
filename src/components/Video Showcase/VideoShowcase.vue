@@ -1,5 +1,5 @@
 <template>
-    <div class="h-[1024px] bg-[#1F2933] rounded-[40px] relative mt-[16px]">
+    <div class=" bg-[#1F2933] rounded-[40px] relative mt-[16px]">
         <div class="absolute bottom-0 left-1/2 transform -translate-x-1/2">
             <img src="../../assets/images/clip-path-community.png" alt="">
         </div>

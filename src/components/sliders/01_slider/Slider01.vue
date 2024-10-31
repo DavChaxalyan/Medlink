@@ -1,6 +1,6 @@
 <template>
   <div class="relative overflow-hidden w-full h-full mt-[150px]">
-    <div class="flex gap-[368px] items-center justify-center">
+    <div class="flex items-center justify-around">
       <div class="flex gap-[16px]">
         <div
           class="w-[57px] h-[45px] p-[8px_16px] gap-[10px] rounded-[27px] border-t border-l border-r border-b-0 bg-[#BAD8F14D] border border-solid text-[#1F2933] font-dm-sans text-[24px] font-medium leading-[28.8px] text-left border-[#1F293314]"
