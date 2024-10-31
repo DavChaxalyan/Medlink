@@ -51,7 +51,7 @@
         </div>
       </div>
       <div class="mt-[40px] flex justify-center">
-        <div class="flex gap-[20px] pl-[100px] flex-wrap">
+        <div class="flex gap-[20px]  pl-[100px] xs:pl-0 justify-center flex-wrap">
           <div class="max-w-[560px] flex flex-col gap-[40px]">
             <div class="relative overflow-hidden">
               <img class="max-w-[560px]" src="../../assets/images/nurse.png" alt="Nurse" />
