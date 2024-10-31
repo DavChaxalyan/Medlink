@@ -1,7 +1,7 @@
 <template >
   <div class="bg-[#1F2933] mt-[150px] rounded-[40px]">
     <div>
-      <div class="pt-[80px] flex justify-center gap-[263px]">
+      <div class="pt-[80px] flex justify-center gap-[263px] xs:flex-wrap xs:gap-[10px] ">
         <div class="flex items-center gap-4">
           <div
             class="p-2 pr-4 pb-2 pl-4 rounded-[27px] bg-[#BAD8F14D] max-w-[57px] flex justify-center"

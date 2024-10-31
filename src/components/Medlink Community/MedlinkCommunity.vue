@@ -2,7 +2,7 @@
     <div
         class="relative overflow-hidden  lg:flex-col lg:items-center gap-0 rounded-[0px_40px_40px_40px] bg-[radial-gradient(circle_at_58.91%_45.43%,_#BAD8F1_0%,_#B4C0D0_100%)] flex justify-between ">
         <div class="pt-[99px] pb-0 pl-[134px] lg2:pl-[50px]">
-            <div class='w-[560px] h-[482px]'>
+            <div class='w-[560px] xs:max-w-[500px] h-[482px]'>
                 <p class="font-dm-sans text-[96px] font-normal leading-[96px] tracking-[-0.06em] text-left">MedLink
                     Community</p>
                 <p class="font-dm-sans text-[32px] font-normal leading-[32px] tracking-[-0.06em] mt-[32px] text-left">

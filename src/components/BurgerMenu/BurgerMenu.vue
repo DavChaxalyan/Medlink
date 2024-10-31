@@ -1,5 +1,5 @@
 <template>
-  <div class="relative z-50 lg:hidden focus:outline-none">
+  <div class="relative z-50 hidden lg:block focus:outline-none">
     <button @click="toggleMenu" class="focus:outline-none">
       <svg
         class="w-6 h-6 text-gray-800"

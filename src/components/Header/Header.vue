@@ -1,7 +1,7 @@
 <template>
   <div>
     <header class="py-0">
-      <nav class="max-w-[1640px] w-full flex justify-between">
+      <nav class="max-w-[1640px] w-full flex justify-between lg:items-center lg:pr-[15px]">
         <div class="container-logo h-20 w-full max-w-[500px]">
           <div class="pt-[30px] pl-[134px]">
             <router-link to="/">
@@ -13,7 +13,7 @@
             </router-link>
           </div>
         </div>
-        <ul class="hidden lg:flex items-center">
+        <ul class="lg:hidden flex items-center">
           <div class="relative">
             <div
               v-if="!isSearchOpen"
