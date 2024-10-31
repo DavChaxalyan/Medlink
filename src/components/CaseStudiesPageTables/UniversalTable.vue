@@ -1,6 +1,6 @@
 <template>
-    <div>
-      <table class="min-w-full table-auto border-collapse border rounded-[24px] overflow-hidden">
+    <div class="overflow-x-auto rounded-[24px]">
+      <table class="min-w-[1550px] table-auto border-collapse border rounded-[24px]">
         <thead>
           <tr>
             <th v-for="(header, index) in headers" :key="index" class="p-[24px] font-dm-sans text-[16px] font-semibold leading-[24px] text-left text-[#1F2933] bg-[#E4E9F3] border border-[#1F293314]">
@@ -13,7 +13,7 @@
             <td v-for="(cell, cellIndex) in row" :key="cellIndex" class="p-[24px] font-dm-sans text-[16px] font-semibold leading-[24px] text-left text-[#1F2933] border border-[#1F293314]">
               {{ cell }}
             </td>
-          </tr>
+          </tr> 
         </tbody>
       </table>
     </div>

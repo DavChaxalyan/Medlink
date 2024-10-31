@@ -7,7 +7,7 @@
                     Conditions</p>
             </div>
         </router-link>
-        <div class="flex items-center gap-[16px]">
+        <div class="flex items-center gap-[16px] lg3:items-start">
             <div
                 class="w-[63px] h-[45px] p-[8px_16px] gap-[10px] rounded-[27px] border bg-[#BAD8F14D] border-[#1F293314] flex items-center justify-center text-[#1F2933] font-dm-sans text-[24px] font-medium leading-[28.8px] text-left">
                 02</div>
@@ -29,7 +29,7 @@
                 <img class="max-w-[30px]" src="../../assets/images/arrow-down-icon.png" alt="down">
             </div>
         </div>
-        <div class="flex items-center gap-[16px] mt-[100px] mb-[60px]">
+        <div class="flex items-center gap-[16px] mt-[100px] mb-[60px] lg3:items-start">
             <div
                 class="w-[63px] h-[45px] p-[8px_16px] gap-[10px] rounded-[27px] border bg-[#BAD8F14D] border-[#1F293314] flex items-center justify-center text-[#1F2933] font-dm-sans text-[24px] font-medium leading-[28.8px] text-left">
                 03</div>
