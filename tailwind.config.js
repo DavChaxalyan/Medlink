@@ -20,6 +20,7 @@ module.exports = {
         lg: { max: "1024px" },
         lg2: { max: "1370px" },
         xs: { max: "678px" },
+        lg3: {'max': '1000px'},  
       },
     },
   },
