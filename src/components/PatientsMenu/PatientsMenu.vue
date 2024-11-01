@@ -11,7 +11,7 @@
       <div class="flex gap-[118.33px] mt-[20px]">
         <div class="max-w-[176px] flex flex-col gap-[20px]">
           <router-link to="/breast-cancer">
-            <p class="font-normal leading-[24px] text-customGray text-[16px]">
+            <p class="font-[800] leading-[24px] text-[#003b80] text-[16px]">
               Breast Cancer
             </p>
           </router-link>

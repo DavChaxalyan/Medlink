@@ -35,7 +35,7 @@
                   For Patients
                   <div class="pt-[24px]" :class="{ 'hidden': !isVisible, 'block': isVisible }">
                     <ul class="flex flex-col gap-[20px] h-[285px] overflow-auto">
-                      <li class="font-dm-sans text-[16px] font-normal leading-[24px] text-left text-[#1F2933]">
+                      <li class="font-dm-sans text-[16px] leading-[24px] text-left font-[800] text-[#003b80]">
                         <router-link to="/breast-cancer" @click.self="toggleMenu">
                           Breast Cancer
                         </router-link>
@@ -132,7 +132,7 @@
                   About Us</li>
               </ul>
               <button
-                class="max-w-[327px] w-[100%] bg-[#1F2933] h-[80px] p-[32px] gap-[10px] rounded-[40px] font-dm-sans text-[16px] font-semibold leading-[16px] text-[#FFFFFF]">Login</button>
+                class="max-w-[327px] w-[100%] bg-[#1F2933] h-[80px] p-[32px] gap-[10px] rounded-[40px] font-dm-sans text-[16px] font-semibold leading-[16px] text-[#FFFFFF]" @click="openPopup">Login</button>
             </div>
           </div>
         </div>
@@ -142,10 +142,17 @@
 </template>
 
 <script setup>
-import { ref, onMounted, watch } from "vue";
+import { ref, onMounted, watch, defineProps } from "vue";
 
 const isOpen = ref(false);
 const isVisible = ref(false);
+
+const props = defineProps({
+  openPopup: {
+    type: Function,
+    required: true,
+  },
+});
 
 function toggleMenu() {
   isOpen.value = !isOpen.value;
