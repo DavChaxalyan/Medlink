@@ -22,7 +22,6 @@
           accumsan suscipit nisl et aliquam.
         </p>
       </div>
-      {{ console.log(latestObj.values) }}
       <LatestPostsItem :currentSlide="currentSlide" :latestObj="latestObj" />
     </div>
     <div>
