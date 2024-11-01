@@ -1,6 +1,6 @@
 <template>
     <div class="fixed inset-0 flex flex-col items-center justify-center z-[5000] backdrop-blur-24" v-if="isVisible">
-        <div class="flex justify-between max-w-[384px]">
+        <div class="flex justify-between max-w-[384px] transition-transform transform scale-100 animate-fade-in">
             <img src="/src/assets/images/delete-record-popup-img.png" alt="" class="w-[72%]"
                 style="filter: brightness(0) saturate(100%) invert(93%) sepia(7%) saturate(2133%) hue-rotate(32deg) brightness(108%) contrast(101%);">
             <div @click="close"
