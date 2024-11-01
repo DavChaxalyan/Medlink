@@ -1,6 +1,6 @@
 <template>
   <div class="relative overflow-hidden w-full h-full mt-[150px]">
-    <div class="flex gap-[368px] items-center justify-center">
+    <div class="flex items-center justify-around xs:flex-wrap gap-[10px]">
       <div class="flex gap-[16px]">
         <div
           class="w-[57px] h-[45px] p-[8px_16px] gap-[10px] rounded-[27px] border-t border-l border-r border-b-0 bg-[#BAD8F14D] border border-solid text-[#1F2933] font-dm-sans text-[24px] font-medium leading-[28.8px] text-left border-[#1F293314]"
@@ -8,14 +8,14 @@
           01
         </div>
         <p
-          class="text-[#1F2933] font-dm-sans text-[64px] font-normal leading-[64px] tracking-[-0.04em] text-left w-[457px]"
+          class="text-[#1F2933] font-dm-sans text-[64px] font-normal leading-[64px] tracking-[-0.04em] text-left max-w-[457px]"
         >
           Empower Your Health Journey
         </p>
       </div>
       <div>
         <p
-          class="font-dm-sans text-[20px] font-medium leading-[24px] text-left text-[#1F2933A3] w-[242px] h-[48px]"
+          class="font-dm-sans text-[20px] font-medium leading-[24px] text-left text-[#1F2933A3] max-w-[242px] h-[48px]"
         >
           Guidance, Inspiration, and Understanding
         </p>

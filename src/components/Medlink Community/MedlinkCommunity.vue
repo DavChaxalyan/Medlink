@@ -1,8 +1,8 @@
 <template>
     <div
-        class="relative overflow-hidden h-[788px]  gap-0 rounded-[0px_40px_40px_40px] bg-[radial-gradient(circle_at_58.91%_45.43%,_#BAD8F1_0%,_#B4C0D0_100%)] flex justify-between">
-        <div class="pt-[99px] pb-0 pl-[134px]">
-            <div class='w-[560px] h-[482px]'>
+        class="relative overflow-hidden  lg:flex-col lg:items-center gap-0 rounded-[0px_40px_40px_40px] bg-[radial-gradient(circle_at_58.91%_45.43%,_#BAD8F1_0%,_#B4C0D0_100%)] flex justify-between ">
+        <div class="pt-[99px] pb-0 pl-[134px] lg2:pl-[50px]">
+            <div class='w-[560px] xs:max-w-[500px] h-[482px]'>
                 <p class="font-dm-sans text-[96px] font-normal leading-[96px] tracking-[-0.06em] text-left">MedLink
                     Community</p>
                 <p class="font-dm-sans text-[32px] font-normal leading-[32px] tracking-[-0.06em] mt-[32px] text-left">
@@ -27,7 +27,7 @@
             <img src="../../assets/images/clip-path-community.png" alt="">
         </div>
 
-        <div class="absolute flex flex-col gap-[160px] right-[133px] top-[125px]">
+        <div class="absolute flex flex-col gap-[160px] lg2:gap-[80px] lg:top-[55%] lg2:right-[10%] lg:!right-[25%] right-[133px] top-[125px]">
             <div class="flex items-center justify-end">
                 <div
                     class="w-[263px] h-[263px] rounded-[8px] bg-[#1F293314] backdrop-blur-[24px] p-[32px_24px_24px_24px] flex flex-col gap-[24px]">
@@ -53,7 +53,7 @@
                     </div>
                 </div>
             </div>
-            <div class="flex gap-[16px]">
+            <div class="flex gap-[16px] lg2:flex-col">
                 <div
                     class="w-[263px] h-[120px] rounded-[8px] bg-[#1F293314] backdrop-blur-[24px] p-[16px] flex flex-col gap-[16px]">
                     <p class="font-dm-sans text-[40px] font-medium leading-[40px] text-left text-[#FFFFFF]">80%</p>
@@ -80,4 +80,7 @@ const progressStroke = computed(() => {
     return `${(progress.value / 100) * totalLength} ${totalLength}`;
 });
 </script>
-<style></style>
+<style scoped>
+
+
+</style>
