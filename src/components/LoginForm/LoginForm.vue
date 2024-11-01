@@ -70,7 +70,6 @@ const password = ref('');
 const isRegister = ref(false);
 
 const handleRegister = (userData) => {
-    console.log('Register:', userData);
     close();
 };
 

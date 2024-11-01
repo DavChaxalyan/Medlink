@@ -28,7 +28,10 @@
               <ul>
                 <li
                   class="font-dm-sans text-[24px] font-medium leading-[28.8px] tracking[-0.02em] text-left text-[#1F2933] pb-[24px] border-b border-[#1F293314]">
-                  Home</li>
+                  <router-link to="/">
+                    Home
+                  </router-link>
+                </li>
                 <li
                   class="font-dm-sans text-[24px] font-medium leading-[28.8px] tracking[-0.02em] text-left text-[#1F2933] pb-[24px] pt-[24px] border-b border-[#1F293314]"
                   @click="toggle">
@@ -126,13 +129,20 @@
                 </li>
                 <li
                   class="font-dm-sans text-[24px] font-medium leading-[28.8px] tracking[-0.02em] text-left text-[#1F2933] pb-[24px] pt-[24px] border-b border-[#1F293314]">
-                  For Doctors</li>
+                  <router-link to="/video-interview">
+                    For Doctors
+                  </router-link>
+                </li>
                 <li
                   class="font-dm-sans text-[24px] font-medium leading-[28.8px] tracking[-0.02em] text-left text-[#1F2933] pb-[24px] pt-[24px] border-b border-[#1F293314]">
-                  About Us</li>
+                  <router-link to="/case-studies">
+                    About Us
+                  </router-link>
+                </li>
               </ul>
               <button
-                class="max-w-[327px] w-[100%] bg-[#1F2933] h-[80px] p-[32px] gap-[10px] rounded-[40px] font-dm-sans text-[16px] font-semibold leading-[16px] text-[#FFFFFF]" @click="openPopup">Login</button>
+                class="max-w-[327px] w-[100%] bg-[#1F2933] h-[80px] p-[32px] gap-[10px] rounded-[40px] font-dm-sans text-[16px] font-semibold leading-[16px] text-[#FFFFFF]"
+                @click="openPopup">Login</button>
             </div>
           </div>
         </div>

@@ -1,6 +1,6 @@
 <template>
     <footer class=" mt-[16px] rounded-[40px] bg-[#DFF3F6]">
-        <div class=" flex flex-col items-center justify-center">
+        <div class=" flex flex-col items-center justify-center px-[20px]">
             <div class="flex flex-col gap-[80px] items-center justify-center max-w-[1300px] w-[100%]">
                 <div class="flex items-center justify-center pt-[80px] w-[100%]">
                     <div class="flex justify-between lg3:flex-wrap lg3:gap-[60px] lg3:max-w-[615px] lg3:justify-center w-[100%]">
