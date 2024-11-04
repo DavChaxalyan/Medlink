@@ -19,7 +19,8 @@
                 <img src="../../assets/images/play.png" alt="play">
               </button>
             </router-link>
-          </div>
+            </div>
+          
           <router-link to="/video-interview">
             <button
               class="w-[184px] h-[184px] gap-4 rounded-[80px] hidden l2:flex backdrop-blur-[24px] items-center justify-center absolute bottom-[56%] right-[35%]">
@@ -35,56 +36,55 @@
               slide.description }}</p>
           </div>
         </div>
+        </div>
+      </div>
+  
+      <div class="flex justify-between items-center mt-4">
+        <button @click="prevSlide" class="w-[160px] h-[64px] p-[20px_32px] rounded-[80px] border border-[#FFFFFF29] flex items-center justify-center gap-[10px]">
+            <img src="../../assets/images/arrow-left.png" alt="Prev">
+            <p class="text-[#FFFFFF] font-semibold text-[16px] leading-[16px] text-left">Prev</p>
+        </button>
+        <button @click="nextSlide" class="w-[160px] h-[64px] p-[20px_32px] rounded-[80px] border border-[#FFFFFF29] flex items-center justify-center gap-[10px]">
+            <img src="../../assets/images/arrow-right.png" alt="Next">
+            <p class="text-[#FFFFFF] font-semibold text-[16px] leading-[16px] text-left">Next</p>
+        </button>
       </div>
     </div>
-
-    <div class="flex justify-between items-center mt-4">
-      <button @click="prevSlide"
-        class="w-[160px] h-[64px] p-[20px_32px] rounded-[80px] border border-[#FFFFFF29] flex items-center justify-center gap-[10px]">
-        <img src="../../assets/images/arrow-left.png" alt="Prev">
-        <p class="text-[#FFFFFF] font-semibold text-[16px] leading-[16px] text-left">Prev</p>
-      </button>
-      <button @click="nextSlide"
-        class="w-[160px] h-[64px] p-[20px_32px] rounded-[80px] border border-[#FFFFFF29] flex items-center justify-center gap-[10px]">
-        <img src="../../assets/images/arrow-right.png" alt="Next">
-        <p class="text-[#FFFFFF] font-semibold text-[16px] leading-[16px] text-left">Next</p>
-      </button>
-    </div>
-  </div>
-</template>
-
-<script setup>
-import { ref } from 'vue'
-import slideImg from '../../assets/images/video-show-case.png'
-import { RouterLink } from 'vue-router';
-
-const slides = ref([
-  {
-    title: 'Understanding Chronic Illness Management',
-    description: 'Discover strategies for managing chronic conditions effectively. This video covers practical tips, lifestyle adjustments, and expert advice to improve quality of life.',
-    image: slideImg
-  },
-  {
-    title: 'Understanding Chronic Illness Management',
-    description: 'Discover strategies for managing chronic conditions effectively. This video covers practical tips, lifestyle adjustments, and expert advice to improve quality of life.',
-    image: slideImg
-  },
-  {
-    title: 'Understanding Chronic Illness Management',
-    description: 'Discover strategies for managing chronic conditions effectively. This video covers practical tips, lifestyle adjustments, and expert advice to improve quality of life.',
-    image: slideImg
+  </template>
+  
+  <script setup>
+  import { ref } from 'vue'
+  import slideImg from '../../assets/images/video-show-case.png'
+  
+  const slides = ref([
+    {
+      title: 'Understanding Chronic Illness Management',
+      description: 'Discover strategies for managing chronic conditions effectively. This video covers practical tips, lifestyle adjustments, and expert advice to improve quality of life.',
+      image: slideImg
+    },
+    {
+      title: 'Understanding Chronic Illness Management',
+      description: 'Discover strategies for managing chronic conditions effectively. This video covers practical tips, lifestyle adjustments, and expert advice to improve quality of life.',
+      image: slideImg
+    },
+    {
+      title: 'Understanding Chronic Illness Management',
+      description: 'Discover strategies for managing chronic conditions effectively. This video covers practical tips, lifestyle adjustments, and expert advice to improve quality of life.',
+      image: slideImg
+    }
+  ])
+  
+  const currentSlide = ref(0)
+  
+  const prevSlide = () => {
+    currentSlide.value = currentSlide.value > 0 ? currentSlide.value - 1 : slides.value.length - 1
   }
-])
-
-const currentSlide = ref(0)
-
-const prevSlide = () => {
-  currentSlide.value = currentSlide.value > 0 ? currentSlide.value - 1 : slides.value.length - 1
-}
-
-const nextSlide = () => {
-  currentSlide.value = currentSlide.value < slides.value.length - 1 ? currentSlide.value + 1 : 0
-}
-</script>
-
-<style scoped></style>
+  
+  const nextSlide = () => {
+    currentSlide.value = currentSlide.value < slides.value.length - 1 ? currentSlide.value + 1 : 0
+  }
+  </script>
+  
+  <style scoped>
+  </style>
+  
