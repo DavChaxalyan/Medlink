@@ -28,14 +28,17 @@
               <ul>
                 <li
                   class="font-dm-sans text-[24px] font-medium leading-[28.8px] tracking[-0.02em] text-left text-[#1F2933] pb-[24px] border-b border-[#1F293314]">
-                  Home</li>
+                  <router-link to="/" @click="toggleOverflow">
+                    Home
+                  </router-link>
+                </li>
                 <li
                   class="font-dm-sans text-[24px] font-medium leading-[28.8px] tracking[-0.02em] text-left text-[#1F2933] pb-[24px] pt-[24px] border-b border-[#1F293314]"
                   @click="toggle">
                   For Patients
                   <div class="pt-[24px]" :class="{ 'hidden': !isVisible, 'block': isVisible }">
                     <ul class="flex flex-col gap-[20px] h-[285px] overflow-auto">
-                      <li class="font-dm-sans text-[16px] font-normal leading-[24px] text-left text-[#1F2933]">
+                      <li class="font-dm-sans text-[16px] leading-[24px] text-left font-[800] text-[#003b80]">
                         <router-link to="/breast-cancer" @click.self="toggleMenu">
                           Breast Cancer
                         </router-link>
@@ -126,13 +129,20 @@
                 </li>
                 <li
                   class="font-dm-sans text-[24px] font-medium leading-[28.8px] tracking[-0.02em] text-left text-[#1F2933] pb-[24px] pt-[24px] border-b border-[#1F293314]">
-                  For Doctors</li>
+                  <router-link to="/video-interview" @click=toggleOverflow>
+                    For Doctors
+                  </router-link>
+                </li>
                 <li
                   class="font-dm-sans text-[24px] font-medium leading-[28.8px] tracking[-0.02em] text-left text-[#1F2933] pb-[24px] pt-[24px] border-b border-[#1F293314]">
-                  About Us</li>
+                  <router-link to="/case-studies" @click="toggleOverflow">
+                    About Us
+                  </router-link>
+                </li>
               </ul>
               <button
-                class="max-w-[327px] w-[100%] bg-[#1F2933] h-[80px] p-[32px] gap-[10px] rounded-[40px] font-dm-sans text-[16px] font-semibold leading-[16px] text-[#FFFFFF]">Login</button>
+                class="max-w-[327px] w-[100%] bg-[#1F2933] h-[80px] p-[32px] gap-[10px] rounded-[40px] font-dm-sans text-[16px] font-semibold leading-[16px] text-[#FFFFFF]"
+                @click="openPopup">Login</button>
             </div>
           </div>
         </div>
@@ -142,10 +152,17 @@
 </template>
 
 <script setup>
-import { ref, onMounted, watch } from "vue";
+import { ref, onMounted, watch, defineProps } from "vue";
 
 const isOpen = ref(false);
 const isVisible = ref(false);
+
+const props = defineProps({
+  openPopup: {
+    type: Function,
+    required: true,
+  },
+});
 
 function toggleMenu() {
   isOpen.value = !isOpen.value;
@@ -158,6 +175,10 @@ const toggle = () => {
 onMounted(() => {
   isOpen.value = false;
 });
+
+const toggleOverflow = () => {
+  isOpen.value = false
+}
 
 watch(isOpen, (newValue) => {
   document.body.style.overflow = newValue ? "hidden" : "auto";

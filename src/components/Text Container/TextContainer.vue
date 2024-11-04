@@ -1,8 +1,11 @@
 <template>
-    <div class="mt-[150px] bg-[#E4ECF7] rounded-[40px] py-[80px]">
-        <div class="flex flex-col gap-[24px] mx-auto max-w-[1200px]">
-            <div v-for="(item, ind) in infoArray" :key="ind">
-                <TextContainerItem :title="item.title" :description="item.description" :count="ind + 1" :infoArray="infoArray" />
+    <div class="px-6">
+        <div class="mt-[150px] bg-[#E4ECF7] rounded-[40px] py-[80px] px-6">
+            <div class="flex flex-col gap-[24px] mx-auto max-w-[1200px]">
+                <div v-for="(item, ind) in infoArray" :key="ind">
+                    <TextContainerItem :title="item.title" :description="item.description" :count="ind + 1"
+                        :infoArray="infoArray" />
+                </div>
             </div>
         </div>
     </div>

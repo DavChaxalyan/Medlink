@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-[#E4ECF7] rounded-[0px_40px_40px_40px] pb-[112px] l2:px-[16px]">
+    <div class="bg-[#B4C0D0] rounded-[0px_40px_40px_40px] pb-[112px] l2:px-[16px]">
         <div class="flex flex-col gap-[24px] items-center pt-[80px]">
             <p
                 class="max-w-[1103px] l2:hidden font-sans text-[96px] font-normal leading-[96px] tracking-[-0.06em] text-center text-[#1F2933]">

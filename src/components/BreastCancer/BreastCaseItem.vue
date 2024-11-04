@@ -12,7 +12,7 @@
             <div class="w-full h-[100%] flex justify-center">
               <img :src="image" alt="image" class="max-h-[390px]" :style="{width: playImage ? '100%' : '50%'}">
             </div>
-            <div class="absolute left-[94%] top-[23%] right-[-14px]">
+            <div class="absolute left-[94%] right-[-14px]" :style="{top: playImage ? '23%' : '31%'}">
               <img src="../../assets/images/breast-vector.png" alt="breast" />
             </div>
             <div v-if="messageImage" class="bg-[#FFFFFF] p-[17.52px] rounded-[21.89px] max-w-[312px] w-[100%]">
