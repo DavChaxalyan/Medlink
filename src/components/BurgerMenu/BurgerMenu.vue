@@ -28,7 +28,7 @@
               <ul>
                 <li
                   class="font-dm-sans text-[24px] font-medium leading-[28.8px] tracking[-0.02em] text-left text-[#1F2933] pb-[24px] border-b border-[#1F293314]">
-                  <router-link to="/">
+                  <router-link to="/" @click="toggleOverflow">
                     Home
                   </router-link>
                 </li>
@@ -129,13 +129,13 @@
                 </li>
                 <li
                   class="font-dm-sans text-[24px] font-medium leading-[28.8px] tracking[-0.02em] text-left text-[#1F2933] pb-[24px] pt-[24px] border-b border-[#1F293314]">
-                  <router-link to="/video-interview">
+                  <router-link to="/video-interview" @click=toggleOverflow>
                     For Doctors
                   </router-link>
                 </li>
                 <li
                   class="font-dm-sans text-[24px] font-medium leading-[28.8px] tracking[-0.02em] text-left text-[#1F2933] pb-[24px] pt-[24px] border-b border-[#1F293314]">
-                  <router-link to="/case-studies">
+                  <router-link to="/case-studies" @click="toggleOverflow">
                     About Us
                   </router-link>
                 </li>
@@ -175,6 +175,10 @@ const toggle = () => {
 onMounted(() => {
   isOpen.value = false;
 });
+
+const toggleOverflow = () => {
+  isOpen.value = false
+}
 
 watch(isOpen, (newValue) => {
   document.body.style.overflow = newValue ? "hidden" : "auto";
