@@ -1,10 +1,11 @@
-<script setup>
-</script>
-
-<template>
-
+<template >
+    <div>
+        <router-view />
+    </div>
 </template>
+<script setup>
 
-<style scoped>
-
+</script>
+<style >
+    
 </style>
